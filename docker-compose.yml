@@ -6,7 +6,7 @@ services:
     ports: 
       - "80:80"
     volumes:
-      - /data/apache/Site-Spotify-main/:/usr/local/apache2/htdocs/
+      - /data/apache/Site-Spotify/:/usr/local/apache2/htdocs/
     networks:
       - my-network
 
