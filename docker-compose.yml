@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  apache:
+    image: httpd
+    ports: 
+      - "80:80"
+    volumes:
+      - /data/apache/Site-Spotify-main/:/usr/local/apache2/htdocs/
+    networks:
+      - my-network
+
+networks:
+  my-network:
